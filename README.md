@@ -296,7 +296,7 @@ rfm['segment'] = pd.qcut(rfm['recency'], q=5, labels=[5,4,3,2,1])
 ## 📚 Resources & References
 
 ### Datasets
-- Synthetic data generated for teaching purposes
+- Synthetic data generated.
 - Mimics real-world SaaS subscription business patterns
 
 ### Learning Materials
