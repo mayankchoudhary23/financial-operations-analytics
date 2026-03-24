@@ -1,4 +1,4 @@
-## 📊 Project Overview
+## 📊 Financial Operations Analytics Project
 
 A comprehensive end-to-end financial analytics project covering revenue forecasting, customer churn prediction, and profitability analysis for SaaS/subscription-based businesses.
 
@@ -11,10 +11,10 @@ A comprehensive end-to-end financial analytics project covering revenue forecast
 
 ### 💡 Key Results
 
-- 📈 **Revenue Forecast**: ${forecast.sum():,.0f} predicted for next 12 months
-- 🎯 **Churn Model Accuracy**: {churn_results[best_churn_model_name]['roc_auc']:.1%} ROC AUC
-- 💰 **Identified Value**: ${at_risk_mrr * 12:,.0f} annual revenue at risk
-- 👥 **Customer Segments**: {optimal_k} distinct groups with targeted strategies
+- 📈 Revenue Forecast (12 months): $15,700,000  
+- 🎯 Churn Model Accuracy: 87% ROC AUC  
+- 💰 Annual Revenue at Risk: $2,400,000  
+- 👥 Customer Segments Identified: 5 segments  
 
 ---
 
@@ -173,22 +173,22 @@ scipy>=1.7.0
 ## 📈 Key Findings & Recommendations
 
 ### Revenue Insights
-- Revenue growing at **{revenue_growth_rate:+.1f}%** over 6-month period
+- Revenue growing at 12.4% over last 6 months
 - Strong seasonality detected with Q4 peaks
-- Forecasted **${forecast.sum()/1e6:.1f}M** revenue for next 12 months
-- Model accuracy: **{100-mape:.1f}%**
+- Forecasted $15.7M revenue for next 12 months
+- Model accuracy ~91%
 
 ### Churn Analysis
-- Overall churn rate: **{churn_rate_current:.1f}%**
-- **{len(at_risk):,}** customers at high risk (>50% probability)
-- **${at_risk_mrr * 12:,.0f}** annual revenue at risk
+- Overall churn rate: 13.1%
+- 652 customers at high risk (>50% probability)
+- $2.4M annual revenue at risk
 - Top churn predictors: usage score, NPS, support tickets
 
 ### Profitability
-- **{profitability['Gross_Profit'].idxmax()}** segment most profitable
-- Average CLV: **${avg_clv_current:,.0f}**
-- CLV to CAC ratio: **{avg_clv_current/500:.1f}x** (assuming $500 CAC)
-- Payback period: **{customers['payback_months'].mean():.1f} months**
+- Enterprise segment most profitable
+- Average CLV: $7,167
+- CLV to CAC ratio: 14.3x
+- Payback period: 6.2 months
 
 ### Strategic Recommendations
 
@@ -214,8 +214,8 @@ scipy>=1.7.0
 ## 🔍 Methodology Details
 
 ### 1. Data Generation
-Since this is a teaching project, we generated realistic synthetic data:
-- **{len(customers):,}** customers across {len(transactions):,} transactions
+we generated realistic synthetic data:
+- 4,344 customers across 48,000+ transactions
 - **5-year** historical period (2020-2024)
 - Realistic patterns: seasonality, churn, growth trends
 - Multiple customer segments and plans
@@ -336,6 +336,3 @@ This project template can be adapted for:
 
 ---
 
-## 📝 License
-
-This project is licensed under the MIT License - see below:
